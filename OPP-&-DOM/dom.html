@@ -1,0 +1,36 @@
+<!--
+You have to design an Online Quiz using OOP style. The app consists of 3 mains parts (see below figure)
+1. The title: JavaScript Online Quiz
+2. The Question Container which contains the Question and a list of choice. User can only choose 1 
+answer from the list.
+3. Button Group: Previous Question, Next Question, Submit
+-->
+
+<!doctype html >
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bai Tap 2 - Quiz DOM OPP Design</title>
+  <meta name="description" content="Bai tap 2 - Quiz Design">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">
+            JavaScript Online Quiz
+        </h1>
+    </header>
+    <section style="display: contents">
+        <div data-value=0 id="ques-cont" style="border: 1px solid black; width: 60%; margin: auto; padding: 10px;">
+        </div>
+        <div style="width: 60%; margin: auto; display: flex; justify-content: space-between; position: relative; top: 10px;">
+            <button onclick="prev()">Previous Question</button>
+            <button type="submit">Submit</button>
+            <button onclick="next()">Next Question</button>
+        </div>
+    </section>
+    <script src="quiz.js"></script>
+</body>
+</html>
